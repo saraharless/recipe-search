@@ -1,0 +1,16 @@
+.container{
+  display: flex;
+  width: 1000px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.recipe{
+  flex-direction: row;
+  justify-content: space-between;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  margin: 10px;
+  border: solid 1px #cccccc;
+}
