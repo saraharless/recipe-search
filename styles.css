@@ -1,3 +1,7 @@
+body {
+  background-color: lavender;
+}
+
 .container{
   display: flex;
   width: 1000px;
@@ -13,4 +17,10 @@
   padding: 20px;
   margin: 10px;
   border: solid 1px #cccccc;
+  background-color: white;
+}
+
+image {
+  display: flex;
+  justify-content: center;
 }

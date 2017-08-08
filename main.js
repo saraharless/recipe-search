@@ -5,7 +5,7 @@ let input = document.querySelector('input')
 let button = document.querySelector('button')
 button.addEventListener('click', function() {
   console.log(input.value);
-  goFetch('taco')
+  goFetch(input.value)
 })
 
 function goFetch(search) {
@@ -18,6 +18,7 @@ function goFetch(search) {
         }
         response.json().then(function(data){
           console.log(data);
+          container.innerHTML = ''
           for (var i = 0; i < data.results.length; i++) {
             let image = data.results[i].thumbnail;
             if (image === ''){
